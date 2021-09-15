@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha (){
+        document.write("<br>")
+    }
+    
+    function mostra (frase){
+        document.write(frase)
+        pulaLinha()
+    }
+
+    let vitoria = parseInt(prompt("Quantas vitorias ?"))
+    let empates = parseInt(prompt("Quantos empates ?"))
+
+    let pontos = vitoria * 3 + 1
+
+    document.write("o total de pontos é de: " + pontos)
+    
+</script>
