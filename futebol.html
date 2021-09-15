@@ -13,8 +13,19 @@
     let vitoria = parseInt(prompt("Quantas vitorias ?"))
     let empates = parseInt(prompt("Quantos empates ?"))
 
+    let pontos_ano_passado = parseInt(prompt("Quantos pontos ano passado ?"))
+
     let pontos = vitoria * 3 + 1
 
-    document.write("o total de pontos é de: " + pontos)
+    document.write(" o total de pontos é de: " + pontos)
+
+   if(pontos > pontos_ano_passado){
+    mostra(" seu time está melhor que o ano passado") 
+   }  
+   if(pontos < pontos_ano_passado){
+       mostra(" Seu time está pior que o ano passado")
+   } else {
+       mostra(" seu time está igual ao ano passado")
+   }
     
 </script>
